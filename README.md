@@ -1,28 +1,35 @@
-# Personal Dashboard
+# Personal Dashboard — Learning Fork
 
-A set of small, self-contained HTML apps that share a top bar.
+A personal learning and customization project based on [RowanThistlebrooke/V2-YT](https://github.com/RowanThistlebrooke/V2-YT).
 
-## Deploy your own copy
+This repository is **not presented as original portfolio work**. The upstream author's copyright and usage restrictions remain in effect; do not redistribute, commercialize, or republish the included upstream code without permission.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FRowanThistlebrooke%2FYTdashh1)
+## What I explored
 
-One click → Vercel signs you in, copies the repo to your GitHub, and deploys it. ~30 seconds to a live URL.
+- A responsive bento-style dashboard
+- Goal and daily-progress tracking
+- Health, hydration, finance, and training views
+- Shared navigation across self-contained pages
+- Browser storage and optional Supabase synchronization
+- Mobile safe-area and reduced-width layout handling
 
-## How to use
+## Run locally
 
-Open any `.html` file directly in your browser — no build step, no install.
+The project is made of self-contained HTML, CSS, and JavaScript files. Open `index.html` directly in a browser or serve the folder with a local development server.
 
-| File | What it is |
-|---|---|
-| [index.html](index.html) | Goals tracker (Day Ring, Goal Ticker, To Do list) — the home page |
-| [health.html](health.html) | Supplement / daily stack tracker |
-| [po-water.html](po-water.html) | Water intake tracker |
-| [finance.html](finance.html) | Finances |
-| [gym.html](gym.html) | Progressive overload gym tracker |
-| [topbar.js](topbar.js) | Shared top bar — auto-injected into pages that `<script src="topbar.js">` |
+## Data and configuration
 
-Each app stores its own state in browser `localStorage`. No accounts, no server.
+Most local state is stored in the browser. Some customized pages can synchronize through Supabase.
 
-## Building from scratch
+When adapting the project:
 
-[BUILD_DASHBOARD.md](BUILD_DASHBOARD.md) is the prompt I gave Claude to generate `index.html` — paste it into Claude if you want to rebuild that page yourself.
+- use only a Supabase publishable key in client code;
+- never commit a service-role key;
+- enforce Row Level Security for every exposed table;
+- keep personal configuration and real user data out of the repository.
+
+## Attribution
+
+Original project and copyright: [Rowan Thistlebrooke](https://github.com/RowanThistlebrooke).
+
+My work in this fork is limited to learning, configuration, and personal modifications. This repository should not be treated as one of my original flagship projects.
